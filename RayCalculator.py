@@ -69,15 +69,15 @@ class RayCalculator:
     def set_orientation(self):
         if self.rad == 0:
             self.orientation = 0
-        elif 0 < self.rad < math.pi / 2:
+        elif self.rad < math.pi / 2:
             self.orientation = 1
         elif self.rad == math.pi / 2:
             self.orientation = 2
-        elif math.pi / 2 < self.rad < math.pi:
+        elif self.rad < math.pi:
             self.orientation = 3
         elif self.rad == math.pi:
             self.orientation = 4
-        elif math.pi < self.rad < 3 * math.pi / 2:
+        elif self.rad < 3 * math.pi / 2:
             self.orientation = 5
         elif self.rad == 3 * math.pi / 2:
             self.orientation = 6
@@ -159,4 +159,5 @@ class RayCalculator:
         elif self.length1 > self.length2:
             ray.is_vertical_collision = True
         else:
+
             ray.is_vertical_collision = False
