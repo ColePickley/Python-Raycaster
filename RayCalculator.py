@@ -63,7 +63,7 @@ class RayCalculator:
         self.rad = math.radians(deg + pr)
         if self.rad < 0:
             self.rad += 2 * math.pi
-        elif self.rad > 2 * math.pi:
+        elif self.rad >= 2 * math.pi:
             self.rad -= 2 * math.pi
 
     def set_orientation(self):
@@ -161,3 +161,4 @@ class RayCalculator:
         else:
 
             ray.is_vertical_collision = False
+
