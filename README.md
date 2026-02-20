@@ -1,4 +1,4 @@
-# Python-Raycaster
+# Python_Raycaster
 Welcome to my raycaster program!
 If you don't know what a raycaster is, put simply, it's a 3D simulation of a 2D space.
 This simulation is accomplished by sending rays out from the player's position and 
